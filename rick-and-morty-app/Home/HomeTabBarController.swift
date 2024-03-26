@@ -7,9 +7,20 @@ protocol TabBarViewProtocol {
 
 class HomeTabBarController : UITabBarController, TabBarViewProtocol {
     
-    var characterCellData: [CharacterCellData] = []
+    var characterCellData: [CharacterCellData]
     
     var interactor: HomeTabBarInteractor?
+    
+    init(characterCellData: [CharacterCellData], interactor: HomeTabBarInteractor? = nil) {
+        self.characterCellData = characterCellData
+        self.interactor = interactor
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     let btnMiddle : UIButton = {
        let btn = UIButton(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
@@ -23,17 +34,22 @@ class HomeTabBarController : UITabBarController, TabBarViewProtocol {
         return btn
     }()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override func viewWillAppear(_ animated: Bool) {
         interactor?.fetch(completion: { result in
             switch result {
             case .success(let success):
-                self.addSomeTabItems(characterCellData: success)
+                DispatchQueue.main.async {
+                    self.addSomeTabItems(characterCellData: success)
+                }
+                
             case .failure(let failure):
                 print(failure)
             }
         })
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
 //        returnCellDataToCharacterViewController()
 //        addSomeTabItems()

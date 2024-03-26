@@ -29,6 +29,8 @@ class CharacterViewController: UIViewController, UICollectionViewDelegate, UICol
         
         view.backgroundColor = .systemPurple
         
+        collectionView.reloadData()
+        
         configViews()
         
         // Do any additional setup after loading the view.

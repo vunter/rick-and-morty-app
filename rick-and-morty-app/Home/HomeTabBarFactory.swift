@@ -4,11 +4,11 @@ enum HomeTabBarFactory {
     case instance
     
     func build() -> HomeTabBarController {
-        let view = HomeTabBarController()
+        let interactor = HomeTabBarInteractor()
+        let view = HomeTabBarController(characterCellData: [], interactor: interactor)
         let presenter = HomeTabBarPresenter()
-        let interactor = HomeTabBarInteractor(presenter: presenter)
         
-        view.interactor = interactor
+        interactor.presenter = presenter
         
         return view
     }

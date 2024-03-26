@@ -11,13 +11,9 @@ protocol HomeTabBarInteractorProtocol {
 
 class HomeTabBarInteractor: HomeTabBarInteractorProtocol {
     
-    private var presenter: HomeTabBarPresenterProtocol?
+    var presenter: HomeTabBarPresenterProtocol?
     public var characterCellDataList: [CharacterCellData] = []
     let defaults = UserDefaults.standard
-    
-    init(presenter: HomeTabBarPresenterProtocol?) {
-        self.presenter = presenter
-    }
     
     func fetch(completion: @escaping (Result<[CharacterCellData], Error>) -> Void) {
         let apiManager = CharacterUseCase()
@@ -26,8 +22,6 @@ class HomeTabBarInteractor: HomeTabBarInteractorProtocol {
             switch result {
             case .success(let success):
                 success.results.forEach { character in
-                    let characterCellData = CharacterCellData(image: character.image, name: character.name)
-                    self?.characterCellDataList.append(characterCellData)
                     completion(.success(self?.characterCellDataList ?? []))
                     self?.presenter?.showValues(characterCellData: self?.characterCellDataList ?? [])
                 }
