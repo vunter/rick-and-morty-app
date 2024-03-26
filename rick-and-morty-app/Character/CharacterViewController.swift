@@ -24,12 +24,18 @@ class CharacterViewController: UIViewController, UICollectionViewDelegate, UICol
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        DispatchQueue.main.async {
+            self.collectionView.reloadData()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .systemPurple
         
-        collectionView.reloadData()
+        
         
         configViews()
         
