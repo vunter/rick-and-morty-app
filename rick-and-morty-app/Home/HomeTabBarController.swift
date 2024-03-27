@@ -2,26 +2,12 @@ import UIKit
 import Foundation
 
 protocol TabBarViewProtocol {
-    var characterCellData: [CharacterCellData] { get set }
     func addSomeTabItems(characterCell: CharacterCell)
 }
 
 class HomeTabBarController : UITabBarController, TabBarViewProtocol {
     
-    var characterCellData: [CharacterCellData]
-    
     var interactor: HomeTabBarInteractor?
-    
-    init(characterCellData: [CharacterCellData], interactor: HomeTabBarInteractor? = nil) {
-        self.characterCellData = characterCellData
-        self.interactor = interactor
-        
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     let btnMiddle : UIButton = {
        let btn = UIButton(frame: CGRect(x: 0, y: 0, width: 60, height: 60))

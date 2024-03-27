@@ -10,6 +10,10 @@ class HomeTabBarPresenter: HomeTabBarPresenterProtocol {
     
     private var view: TabBarViewProtocol?
     
+    init(view: TabBarViewProtocol?) {
+        self.view = view
+    }
+    
     func showValues(characterCellData: [CharacterCellData]) {
         characterCellData.forEach { character in
             ImageDownloader.downloadImage(character.image) { _image, urlString in

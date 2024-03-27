@@ -5,10 +5,10 @@ enum HomeTabBarFactory {
     
     func build() -> HomeTabBarController {
         let interactor = HomeTabBarInteractor()
-        let view = HomeTabBarController(characterCellData: [], interactor: interactor)
-        let presenter = HomeTabBarPresenter()
+        let view = HomeTabBarController()
+        let presenter = HomeTabBarPresenter(view: view)
         
-        interactor.presenter = presenter
+        view.interactor = interactor
         
         return view
     }
