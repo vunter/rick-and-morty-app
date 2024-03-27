@@ -6,18 +6,24 @@ protocol CharacterViewProtocol {
     func buildCells()
 }
 
+struct CharacterCell {
+    var image: UIImage
+    var name: String
+}
+
 class CharacterViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, CharacterViewProtocol {
     
     var cellImage: UIImage?
     var cellName: String?
     
-    var characterCellData: CharacterCellData?
+    var characterCellData: CharacterCell?
     let cellReuseIdentifier = "ImageCell"
     
     var interactor = CharacterInteractor()
     
-    init(characterCellData: CharacterCellData) {
-        self.characterCellData = characterCellData
+    init(characterCellData: CharacterCell) {
+        self.cellImage = characterCellData.image
+        self.cellName = characterCellData.name
         
         super.init(nibName: nil, bundle: nil)
     }

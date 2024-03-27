@@ -3,7 +3,7 @@ import Foundation
 
 protocol TabBarViewProtocol {
     var characterCellData: [CharacterCellData] { get set }
-    func addSomeTabItems(characterCellData: CharacterCellData)
+    func addSomeTabItems(characterCell: CharacterCell)
 }
 
 class HomeTabBarController : UITabBarController, TabBarViewProtocol {
@@ -76,8 +76,8 @@ class HomeTabBarController : UITabBarController, TabBarViewProtocol {
         self.tabBar.tintColor = UIColor(hex: "#fe989b", alpha: 1.0)
     }
     
-    func addSomeTabItems(characterCellData: CharacterCellData) {
-        let vc1 = UINavigationController(rootViewController: CharacterViewController(characterCellData: characterCellData))
+    func addSomeTabItems(characterCell: CharacterCell) {
+        let vc1 = UINavigationController(rootViewController: CharacterViewController(characterCellData: characterCell))
         let vc2 = UINavigationController(rootViewController: ViewC2())
         vc1.title = "Home"
         vc2.title = "Favorites"
