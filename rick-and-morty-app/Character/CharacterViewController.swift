@@ -1,9 +1,7 @@
 import UIKit
 
 protocol CharacterViewProtocol {
-    var cellImage: UIImage? { get set }
-    var cellName: String? { get set }
-    func buildCells()
+    func buildCells(characterCellData: CharacterCell)
 }
 
 struct CharacterCell {
@@ -13,37 +11,21 @@ struct CharacterCell {
 
 class CharacterViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, CharacterViewProtocol {
     
-    var cellImage: UIImage?
-    var cellName: String?
-    
     var characterCellData: CharacterCell?
     let cellReuseIdentifier = "ImageCell"
     
-    var interactor = CharacterInteractor()
-    
-    init(characterCellData: CharacterCell) {
-        self.cellImage = characterCellData.image
-        self.cellName = characterCellData.name
-        
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        DispatchQueue.main.async {
-            self.collectionView.reloadData()
-        }
-    }
+    var interactor: CharacterInteractorProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .systemPurple
         
-        
+        interactor?.fetch(completion: {
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        })
         
         configViews()
         
@@ -72,21 +54,19 @@ class CharacterViewController: UIViewController, UICollectionViewDelegate, UICol
         }
         
 //        let currentCharacter = characterCellData[indexPath.item]
-        
-        DispatchQueue.main.async {
-            cell.build(image: self.cellImage ?? UIImage(), name: self.cellName ?? "")
-            self.collectionView.reloadData()
+        if let characterCellData = characterCellData {
+            cell.build(image: characterCellData.image, name: characterCellData.name)
         }
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        interactor.returnNumberOfCount()
+        interactor?.returnNumberOfCount() ?? 1
     }
     
-    func buildCells() {
-        collectionView.reloadData()
+    func buildCells(characterCellData: CharacterCell) {
+        self.characterCellData = characterCellData
     }
     
     func configViews() {

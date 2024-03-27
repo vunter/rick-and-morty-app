@@ -1,11 +1,7 @@
 import UIKit
 import Foundation
 
-protocol TabBarViewProtocol {
-    func addSomeTabItems(characterCell: CharacterCell)
-}
-
-class HomeTabBarController : UITabBarController, TabBarViewProtocol {
+class HomeTabBarController : UITabBarController {
     
     var interactor: HomeTabBarInteractor?
     
@@ -21,24 +17,10 @@ class HomeTabBarController : UITabBarController, TabBarViewProtocol {
         return btn
     }()
     
-    override func viewWillAppear(_ animated: Bool) {
-        interactor?.fetch(completion: { result in
-            switch result {
-            case .success(_):
-                DispatchQueue.main.async {
-                    self.reloadInputViews()
-                }
-            case .failure(let failure):
-                print(failure)
-            }
-        })
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        returnCellDataToCharacterViewController()
-//        addSomeTabItems()
+    
+        addSomeTabItems()
         btnMiddle.frame = CGRect(x: Int(self.tabBar.bounds.width)/2 - 30, y: -20, width: 60, height: 60)
     }
     
@@ -62,8 +44,8 @@ class HomeTabBarController : UITabBarController, TabBarViewProtocol {
         self.tabBar.tintColor = UIColor(hex: "#fe989b", alpha: 1.0)
     }
     
-    func addSomeTabItems(characterCell: CharacterCell) {
-        let vc1 = UINavigationController(rootViewController: CharacterViewController(characterCellData: characterCell))
+    func addSomeTabItems() {
+        let vc1 = UINavigationController(rootViewController: CharacterViewController())
         let vc2 = UINavigationController(rootViewController: ViewC2())
         vc1.title = "Home"
         vc2.title = "Favorites"

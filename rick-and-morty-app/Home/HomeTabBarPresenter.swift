@@ -8,17 +8,13 @@ protocol HomeTabBarPresenterProtocol {
 
 class HomeTabBarPresenter: HomeTabBarPresenterProtocol {
     
-    private var view: TabBarViewProtocol?
-    
-    init(view: TabBarViewProtocol?) {
-        self.view = view
-    }
+    private var view = HomeTabBarController()
     
     func showValues(characterCellData: [CharacterCellData]) {
         characterCellData.forEach { character in
             ImageDownloader.downloadImage(character.image) { _image, urlString in
                 let cell = CharacterCell(image: _image ?? UIImage(), name: character.name)
-                self.view?.addSomeTabItems(characterCell: cell)
+                self.view.addSomeTabItems()
             }
         }
     }

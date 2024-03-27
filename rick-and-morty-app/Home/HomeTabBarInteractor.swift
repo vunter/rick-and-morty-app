@@ -6,7 +6,7 @@ struct CharacterCellData {
 }
 
 protocol HomeTabBarInteractorProtocol {
-    func fetch(completion: @escaping (Result<[Character], Error>) -> Void)
+    func fetch(completion: @escaping () -> Void)
 }
 
 class HomeTabBarInteractor: HomeTabBarInteractorProtocol {
@@ -15,7 +15,11 @@ class HomeTabBarInteractor: HomeTabBarInteractorProtocol {
     public var characterCellDataList: [CharacterCellData] = []
     let defaults = UserDefaults.standard
     
-    func fetch(completion: @escaping (Result<[Character], Error>) -> Void) {
+    init(presenter: HomeTabBarPresenterProtocol?) {
+        self.presenter = presenter
+    }
+    
+    func fetch(completion: @escaping () -> Void) {
         let apiManager = CharacterUseCase()
         
         apiManager.fetchData { [weak self] result in
@@ -26,7 +30,7 @@ class HomeTabBarInteractor: HomeTabBarInteractorProtocol {
                     self?.characterCellDataList.append(characterCellData)
                 }
                 self?.presenter?.showValues(characterCellData: self?.characterCellDataList ?? [])
-                completion(.success(success))
+                completion()
             case .failure(_):
                 self?.presenter?.showError()
             }

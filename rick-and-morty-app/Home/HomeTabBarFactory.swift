@@ -4,9 +4,9 @@ enum HomeTabBarFactory {
     case instance
     
     func build() -> HomeTabBarController {
-        let interactor = HomeTabBarInteractor()
         let view = HomeTabBarController()
-        let presenter = HomeTabBarPresenter(view: view)
+        let presenter = HomeTabBarPresenter()
+        let interactor = HomeTabBarInteractor(presenter: presenter)
         
         view.interactor = interactor
         
