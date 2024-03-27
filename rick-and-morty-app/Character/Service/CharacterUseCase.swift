@@ -10,7 +10,7 @@ class CharacterUseCase {
     
     let defaults = UserDefaults.standard
 
-    func fetchData(completion: @escaping (Result<CharacterResponse, DataError>) -> Void) {
+    func fetchData(completion: @escaping (Result<[Character], DataError>) -> Void) {
         let url = URL(string: "https://rickandmortyapi.com/api/character")
         guard let url = url else { return }
         URLSession.shared.dataTask(with: url) { data, response, error in
@@ -27,7 +27,7 @@ class CharacterUseCase {
             do {
                 let characteres = try JSONDecoder().decode(CharacterResponse.self, from: data)
                 self.defaults.setValue(characteres.results.count, forKey: "CharacteresCount")
-                completion(.success(characteres))
+                completion(.success(characteres.results))
             }
             catch {
                 completion(.failure(.message(error)))

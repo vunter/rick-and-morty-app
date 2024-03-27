@@ -15,6 +15,7 @@ class HomeTabBarPresenter: HomeTabBarPresenterProtocol {
             ImageDownloader.downloadImage(character.image) { _image, urlString in
                 let characterCellData = CharacterCellData(image: character.image, name: character.name)
                 self.view?.characterCellData.append(characterCellData)
+                self.view?.addSomeTabItems(characterCellData: characterCellData)
             }
         }
     }

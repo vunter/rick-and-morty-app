@@ -7,33 +7,457 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5E836C52-1BE8-4F42-BF71-7554AF202494"
+            uuid = "97814CC9-0127-4B43-81FC-50AFC41A2B9D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "rick-and-morty-app/Home/HomeTabBarController.swift"
+            filePath = "rick-and-morty-app/Home/HomeTabBarInteractor.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "addSomeTabItems(characterCellData:)"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "fetch(completion:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "97814CC9-0127-4B43-81FC-50AFC41A2B9D - 681e3153e22aec35"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;rick_and_morty_app.CharacterResponse, rick_and_morty_app.DataError&gt;) -&gt; () in rick_and_morty_app.HomeTabBarInteractor.fetch(completion: (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.CharacterCellData&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Home/HomeTabBarInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "97814CC9-0127-4B43-81FC-50AFC41A2B9D - 681e3153e22aec35"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;rick_and_morty_app.CharacterResponse, rick_and_morty_app.DataError&gt;) -&gt; () in rick_and_morty_app.HomeTabBarInteractor.fetch(completion: (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.CharacterCellData&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Home/HomeTabBarInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "97814CC9-0127-4B43-81FC-50AFC41A2B9D - fcfc5ad0e13a84d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.Character&gt;, rick_and_morty_app.DataError&gt;) -&gt; () in rick_and_morty_app.HomeTabBarInteractor.fetch(completion: (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.Character&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Home/HomeTabBarInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "97814CC9-0127-4B43-81FC-50AFC41A2B9D - fcfc5ad0e13a84d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.Character&gt;, rick_and_morty_app.DataError&gt;) -&gt; () in rick_and_morty_app.HomeTabBarInteractor.fetch(completion: (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.Character&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Home/HomeTabBarInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E54C57A4-D3EF-4643-8263-0DFAFCF4D4F8"
+            uuid = "E8CE7AB3-B2E6-4571-AE9F-7A387602816E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "rick-and-morty-app/Home/HomeTabBarController.swift"
+            filePath = "rick-and-morty-app/Home/HomeTabBarInteractor.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "addSomeTabItems(characterCellData:)"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "fetch(completion:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E8CE7AB3-B2E6-4571-AE9F-7A387602816E - 681e3153e22aec35"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;rick_and_morty_app.CharacterResponse, rick_and_morty_app.DataError&gt;) -&gt; () in rick_and_morty_app.HomeTabBarInteractor.fetch(completion: (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.CharacterCellData&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Home/HomeTabBarInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "E8CE7AB3-B2E6-4571-AE9F-7A387602816E - 681e3153e22aec35"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;rick_and_morty_app.CharacterResponse, rick_and_morty_app.DataError&gt;) -&gt; () in rick_and_morty_app.HomeTabBarInteractor.fetch(completion: (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.CharacterCellData&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Home/HomeTabBarInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "E8CE7AB3-B2E6-4571-AE9F-7A387602816E - fcfc5ad0e13a84d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.Character&gt;, rick_and_morty_app.DataError&gt;) -&gt; () in rick_and_morty_app.HomeTabBarInteractor.fetch(completion: (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.Character&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Home/HomeTabBarInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "E8CE7AB3-B2E6-4571-AE9F-7A387602816E - fcfc5ad0e13a84d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.Character&gt;, rick_and_morty_app.DataError&gt;) -&gt; () in rick_and_morty_app.HomeTabBarInteractor.fetch(completion: (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.Character&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Home/HomeTabBarInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE02F72F-EBBC-4C58-8762-CD070F8AE9B6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rick-and-morty-app/Home/HomeTabBarInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "fetch(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BE02F72F-EBBC-4C58-8762-CD070F8AE9B6 - c9439260d158cc7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rick_and_morty_app.HomeTabBarInteractor.fetch(completion: (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.CharacterCellData&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Home/HomeTabBarInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "BE02F72F-EBBC-4C58-8762-CD070F8AE9B6 - 681e3153e22aec77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;rick_and_morty_app.CharacterResponse, rick_and_morty_app.DataError&gt;) -&gt; () in rick_and_morty_app.HomeTabBarInteractor.fetch(completion: (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.CharacterCellData&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Home/HomeTabBarInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "BE02F72F-EBBC-4C58-8762-CD070F8AE9B6 - 345b5794550f75cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (rick_and_morty_app.Character) -&gt; () in closure #1 (Swift.Result&lt;rick_and_morty_app.CharacterResponse, rick_and_morty_app.DataError&gt;) -&gt; () in rick_and_morty_app.HomeTabBarInteractor.fetch(completion: (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.CharacterCellData&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Home/HomeTabBarInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "336">
+               </Location>
+               <Location
+                  uuid = "BE02F72F-EBBC-4C58-8762-CD070F8AE9B6 - 7a9d5b451a57e984"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rick_and_morty_app.HomeTabBarInteractor.fetch(completion: (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.Character&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Home/HomeTabBarInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "BE02F72F-EBBC-4C58-8762-CD070F8AE9B6 - fcfc5ad0e13a8495"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.Character&gt;, rick_and_morty_app.DataError&gt;) -&gt; () in rick_and_morty_app.HomeTabBarInteractor.fetch(completion: (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.Character&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Home/HomeTabBarInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "BE02F72F-EBBC-4C58-8762-CD070F8AE9B6 - 83cce1164fa3b66d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (rick_and_morty_app.Character) -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.Character&gt;, rick_and_morty_app.DataError&gt;) -&gt; () in rick_and_morty_app.HomeTabBarInteractor.fetch(completion: (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.Character&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Home/HomeTabBarInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3DE99820-9AC7-4722-A211-F88D9E6A7448"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rick-and-morty-app/Character/Service/CharacterUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "fetchData(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3DE99820-9AC7-4722-A211-F88D9E6A7448 - 642506d2f451b2fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in rick_and_morty_app.CharacterUseCase.fetchData(completion: (Swift.Result&lt;rick_and_morty_app.CharacterResponse, rick_and_morty_app.DataError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Character/Service/CharacterUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "904">
+               </Location>
+               <Location
+                  uuid = "3DE99820-9AC7-4722-A211-F88D9E6A7448 - 7cea53759ce7bbbb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in rick_and_morty_app.CharacterUseCase.fetchData(completion: (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.Character&gt;, rick_and_morty_app.DataError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Character/Service/CharacterUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "864">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "07029FAD-A353-4884-9900-FFC3F0AF4C9E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rick-and-morty-app/Character/Service/CharacterUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "fetchData(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "07029FAD-A353-4884-9900-FFC3F0AF4C9E - 642506d2f451b2fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in rick_and_morty_app.CharacterUseCase.fetchData(completion: (Swift.Result&lt;rick_and_morty_app.CharacterResponse, rick_and_morty_app.DataError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Character/Service/CharacterUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "904">
+               </Location>
+               <Location
+                  uuid = "07029FAD-A353-4884-9900-FFC3F0AF4C9E - 7cea53759ce7bbbb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in rick_and_morty_app.CharacterUseCase.fetchData(completion: (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.Character&gt;, rick_and_morty_app.DataError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Character/Service/CharacterUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "864">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "26D3446C-2358-4791-91F4-3C4380C972D2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rick-and-morty-app/Character/Service/CharacterUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "fetchData(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "26D3446C-2358-4791-91F4-3C4380C972D2 - 642506d2f451b29f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in rick_and_morty_app.CharacterUseCase.fetchData(completion: (Swift.Result&lt;rick_and_morty_app.CharacterResponse, rick_and_morty_app.DataError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Character/Service/CharacterUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1080">
+               </Location>
+               <Location
+                  uuid = "26D3446C-2358-4791-91F4-3C4380C972D2 - 7cea53759ce7bbda"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in rick_and_morty_app.CharacterUseCase.fetchData(completion: (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.Character&gt;, rick_and_morty_app.DataError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Character/Service/CharacterUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1024">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "67F18D96-E0EC-4343-8B33-0580175845E5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rick-and-morty-app/Character/Service/CharacterUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "fetchData(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "67F18D96-E0EC-4343-8B33-0580175845E5 - 642506d2f451b2bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in rick_and_morty_app.CharacterUseCase.fetchData(completion: (Swift.Result&lt;rick_and_morty_app.CharacterResponse, rick_and_morty_app.DataError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Character/Service/CharacterUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "1244">
+               </Location>
+               <Location
+                  uuid = "67F18D96-E0EC-4343-8B33-0580175845E5 - 7cea53759ce7bbf9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in rick_and_morty_app.CharacterUseCase.fetchData(completion: (Swift.Result&lt;Swift.Array&lt;rick_and_morty_app.Character&gt;, rick_and_morty_app.DataError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rick-and-morty-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maclys/Documents/rick-and-morty-app/rick-and-morty-app/Character/Service/CharacterUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "1188">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

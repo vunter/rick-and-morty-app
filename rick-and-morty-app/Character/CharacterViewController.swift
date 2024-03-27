@@ -11,10 +11,12 @@ class CharacterViewController: UIViewController, UICollectionViewDelegate, UICol
     var cellImage: UIImage?
     var cellName: String?
     
-    var characterCellData: [CharacterCellData] = []
+    var characterCellData: CharacterCellData?
     let cellReuseIdentifier = "ImageCell"
     
-    init(characterCellData: [CharacterCellData]) {
+    var interactor = CharacterInteractor()
+    
+    init(characterCellData: CharacterCellData) {
         self.characterCellData = characterCellData
         
         super.init(nibName: nil, bundle: nil)
@@ -42,7 +44,7 @@ class CharacterViewController: UIViewController, UICollectionViewDelegate, UICol
         // Do any additional setup after loading the view.
     }
     
-    private lazy var collectionView: UICollectionView = {
+    lazy var collectionView: UICollectionView = {
         let screenWidth = UIScreen.main.bounds.width
         let itemWidth = (screenWidth - 30) / 2
         let layout =  UICollectionViewFlowLayout()
@@ -74,7 +76,7 @@ class CharacterViewController: UIViewController, UICollectionViewDelegate, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        characterCellData.count
+        interactor.returnNumberOfCount()
     }
     
     func buildCells() {

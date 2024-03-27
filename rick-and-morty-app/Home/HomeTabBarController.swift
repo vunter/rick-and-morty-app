@@ -3,6 +3,7 @@ import Foundation
 
 protocol TabBarViewProtocol {
     var characterCellData: [CharacterCellData] { get set }
+    func addSomeTabItems(characterCellData: CharacterCellData)
 }
 
 class HomeTabBarController : UITabBarController, TabBarViewProtocol {
@@ -37,11 +38,10 @@ class HomeTabBarController : UITabBarController, TabBarViewProtocol {
     override func viewWillAppear(_ animated: Bool) {
         interactor?.fetch(completion: { result in
             switch result {
-            case .success(let success):
+            case .success(_):
                 DispatchQueue.main.async {
-                    self.addSomeTabItems(characterCellData: success)
+                    self.reloadInputViews()
                 }
-                
             case .failure(let failure):
                 print(failure)
             }
@@ -76,7 +76,7 @@ class HomeTabBarController : UITabBarController, TabBarViewProtocol {
         self.tabBar.tintColor = UIColor(hex: "#fe989b", alpha: 1.0)
     }
     
-    func addSomeTabItems(characterCellData: [CharacterCellData]) {
+    func addSomeTabItems(characterCellData: CharacterCellData) {
         let vc1 = UINavigationController(rootViewController: CharacterViewController(characterCellData: characterCellData))
         let vc2 = UINavigationController(rootViewController: ViewC2())
         vc1.title = "Home"
