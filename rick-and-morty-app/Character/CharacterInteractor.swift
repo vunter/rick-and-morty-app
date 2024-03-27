@@ -25,7 +25,6 @@ class CharacterInteractor: CharacterInteractorProtocol {
                     let characterCellData = CharacterCellData(image: character.image, name: character.name)
                     self?.characterCellDataList.append(characterCellData)
                 }
-                self?.presenter?.showValues(characterCellData: self?.characterCellDataList ?? [])
                 completion()
             case .failure(_):
                 self?.presenter?.showError()

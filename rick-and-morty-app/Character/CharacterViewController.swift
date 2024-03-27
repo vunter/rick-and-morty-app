@@ -14,7 +14,7 @@ class CharacterViewController: UIViewController, UICollectionViewDelegate, UICol
     var characterCellData: CharacterCell?
     let cellReuseIdentifier = "ImageCell"
     
-    var interactor: CharacterInteractorProtocol?
+    var interactor: CharacterInteractor?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,16 +53,20 @@ class CharacterViewController: UIViewController, UICollectionViewDelegate, UICol
             return CustomCollectionViewCell()
         }
         
-//        let currentCharacter = characterCellData[indexPath.item]
-        if let characterCellData = characterCellData {
-            cell.build(image: characterCellData.image, name: characterCellData.name)
+        if let char = interactor?.characterCellDataList[indexPath.item] {
+            ImageDownloader.downloadImage(char.image) { _image, urlString in
+                DispatchQueue.main.async {
+                    cell.build(image: _image ?? UIImage(), name: char.name)
+                }
+            }
+            
         }
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        interactor?.returnNumberOfCount() ?? 1
+        interactor?.returnNumberOfCount() ?? 0
     }
     
     func buildCells(characterCellData: CharacterCell) {
